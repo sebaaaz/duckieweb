@@ -1,3 +1,4 @@
+$(function() {
 function actualizarHora(){
 	var fecha = new Date();
 
@@ -126,5 +127,17 @@ function dibujarDia(dia) {
 	cal.fillText("DIA", calendario.width/3 - 10, calendario.height/2 - 18);
 }
 
-setInterval(actualizarHora, 1000);
-setInterval(iniciarReloj, 1000);
+var prevSec = -1
+function step() {
+	fecha = new Date();
+	segundo = fecha.getSeconds();
+	if (prevSec != segundo) {
+		actualizarHora();
+		iniciarReloj();
+		prevSec = segundo;
+	}
+}
+
+setInterval(step, 1);
+
+});

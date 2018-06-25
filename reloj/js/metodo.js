@@ -1,13 +1,5 @@
-$(function() {
-  $('a#calculate').bind('click', function() {
-    $.post($SCRIPT_ROOT + '/_add_numbers', {}, function(data) {
-      $("#result").text(data.result);
-    });
-    return false;
-  });
-});
-
 // ROS
+
 $(function() {
   var ros = new ROSLIB.Ros({
     url : 'ws://localhost:9090'
@@ -30,7 +22,7 @@ $(function() {
 var listener = new ROSLIB.Topic({
     ros : ros,
     name : '/chatter',
-    messageType : 'std_msgs/Int32'
+    messageType : 'std_msgs/String'
   });
 
 
