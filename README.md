@@ -1,5 +1,5 @@
 ## Credits
-template provided by https://github.com/dashingcode/front-cover
+Template provided by https://github.com/dashingcode/front-cover
 
 The background image that was used as an example comes from Tom Hall.
 You can find it on <a href="https://flic.kr/p/pqEPBb">Flickr</a>.
