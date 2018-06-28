@@ -17,17 +17,29 @@ $(function() {
     console.log('Connection to websocket server closed.');
   });
 
- // Nodo que lee contador
 
-var listener = new ROSLIB.Topic({
-    ros : ros,
-    name : '/chatter',
-    messageType : 'std_msgs/String'
-  });
+var fecha = new ROSLIB.Topic({
+  ros : ros,
+  name : '/fecha',
+  messageType : 'std_msgs/String'
+});
+
+var speed = new ROSLIB.Topic({
+  ros: ros,
+  name: '/speed',
+  messageType : 'std_msgs/Int32'
+});
+
+speed.subscribe(function(message) {
+  v = message.data;
+  h = (120 - v*6/25).toString();
+  $("#barra").css({"width" : v+"px" , "background-color" : "hsl("+h+", 100%, 50%)"})
+  $(".circle").val(v);
+})
 
 
-	listener.subscribe(function(message) {
-		$("#numeros").text(message.data);
-		console.log(message.data);
-	})
+fecha.subscribe(function(message) {
+	$("#fecha").text(message.data);
+})
+
 });

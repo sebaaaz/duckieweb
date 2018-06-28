@@ -3,7 +3,7 @@
 	color: #FF0000;
 	display: block;
 	font-size: 2em;
-	margin: 40px 0 10px 40px;
+	margin: 40px 0 10px 0;
 	padding: 40px 0;
 	text-align: center;
 	width: 500px;
@@ -12,7 +12,7 @@
 #contReloj{
 	background: rgba(0,0,0,.7);
 	display: block;
-	margin: 0 0 40px 40px;
+	margin: 0 0 40px 0;
 	text-align: center;
 	width: 500px;
 	float: left;
@@ -37,10 +37,16 @@
 	float: right;
 }
 
-#container{
-	float: left;
-	margin: 0px 0px 0px 40px;
+#barra{
+	background-color: hsl(120, 100%, 50%);
+	width: 500px;
+	height: 20px;
 }
+
+
+
+
+
 
 body {
 	background-color: darkgray

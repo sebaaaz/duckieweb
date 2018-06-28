@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>barra de progreso circular Jquery</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    $(document).ready(function() {
+      //$(".dial").knob();
+      $('.circle').knob({
+        'min':0,
+        'max':100,
+        'width':250,
+        'height':250,
+        'displayInput':true,
+        'fgColor':"#e74c3c",
+        'release':function(v) {$("p").text(v);},
+        'readOnly':true
+      });
+    });
+  </script>
+  <style>
+    h1{
+      font-family: 'raleway';
+      font-size:40px;
+      margin-bottom: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Barra de progreso circular con Jquery</h1>
+    <input type="text" value="20" class="circle">
+  </div>
+
+</body>
+</html>
