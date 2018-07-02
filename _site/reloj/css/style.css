@@ -37,19 +37,48 @@
 	float: right;
 }
 
-#barra{
-	background-color: hsl(120, 100%, 50%);
+.barra{
+	background-color: darkgray;
+}
+
+#barraV{
+	position: relative;
+	width: 50px;
+	height: 500px;
+	margin-left: 250px;
+}
+
+#indicadorV{
+	position: absolute;
+	width: 100px;
+	height: 10px;
+	background-color: red;
+	bottom: 50%; left: -25px;
+}
+
+#barraH{
 	width: 500px;
-	height: 20px;
+	height: 50px;
+	position: absolute;
+	margin-left: 600px;
+	bottom: 50%;
+}
+
+#indicadorH{
+	position: absolute;
+	width: 10px;
+	height: 100px;
+	background-color: red;
+	top: -25px; right: 50%;
+}
+
+section{
+	display: flex;
 }
 
 
-
-
-
-
-body {
-	background-color: darkgray
+body{
+	background-color: lightgreen;
 }
 
 @import "{{ site.theme }}";

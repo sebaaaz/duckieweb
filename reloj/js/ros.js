@@ -17,29 +17,19 @@ $(function() {
     console.log('Connection to websocket server closed.');
   });
 
-
-var fecha = new ROSLIB.Topic({
-  ros : ros,
-  name : '/fecha',
-  messageType : 'std_msgs/String'
-});
-
 var speed = new ROSLIB.Topic({
   ros: ros,
   name: '/speed',
-  messageType : 'std_msgs/Int32'
+  messageType : 'std_msgs/Float64'
 });
 
 speed.subscribe(function(message) {
   v = message.data;
+  console.log(v);
   h = (120 - v*6/25).toString();
-  $("#barra").css({"width" : v+"px" , "background-color" : "hsl("+h+", 100%, 50%)"})
-  $(".circle").val(v);
-})
-
-
-fecha.subscribe(function(message) {
-	$("#fecha").text(message.data);
+  v = (v*50 + 50).toString();
+  $("#indicadorV").css({"bottom" : v+"%"});
+  
 })
 
 });
