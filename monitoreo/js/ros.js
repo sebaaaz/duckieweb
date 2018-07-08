@@ -1,12 +1,16 @@
 // ROS
 
 $(function() {
+  connected = false;
+
   var ros = new ROSLIB.Ros({
     url : 'ws://localhost:9090'
   });
 
   ros.on('connection', function() {
     console.log('Connected to websocket server.');
+    connected = true;
+    $("#status").attr("src" , "imgs/on.png")
   });
 
   ros.on('error', function(error) {
@@ -16,6 +20,8 @@ $(function() {
   ros.on('close', function() {
     console.log('Connection to websocket server closed.');
   });
+
+if (connected) {
 
 var speed = new ROSLIB.Topic({
   ros: ros,
@@ -45,5 +51,7 @@ speed.subscribe(function(message) {
 
   console.log(hv);
 })
+
+}
 
 });

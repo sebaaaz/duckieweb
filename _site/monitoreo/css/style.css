@@ -35,10 +35,15 @@
 	top: -25px; right: 50%;
 }
 
+#status{
+	widht: 35px;
+	height: 35px;
+	float: right;
+}
+
 section{
 	display: flex;
 }
-
 
 body{
 	background-color: gray;
