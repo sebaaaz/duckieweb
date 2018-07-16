@@ -1,14 +1,13 @@
-}
-
 .barra{
 	background-color: darkgray;
 }
 
 #barraV{
+	margin-left: 150px;
+	margin-top: 50px;
 	position: absolute;
 	width: 50px;
 	height: 500px;
-	background-color: gray;
 }
 
 #indicadorV{
@@ -20,12 +19,11 @@
 }
 
 #barraH{
-	right: 350px;
-	top: 40%;
+	margin-left: 350px;
+	margin-top: 270px;
 	width: 500px;
 	height: 50px;
 	position: absolute;
-	background-color: gray;
 
 }
 
@@ -47,10 +45,29 @@
 	margin: -170px -100px 0px 150px;
 	height: 507px;
 	width: 700px;
-	border-color: cyan;
-	border-style: dotted;
 	display: flex;
 }
+
+#NL{
+	margin-left: -50px;
+	margin-top: 500px;
+	color: white;
+	font-size: 32px;
+	padding-right: 500px;
+}
+
+#NA{
+	color: white;
+	font-size: 32px;
+	margin-top: 80px;
+}
+
+#camara{
+	margin-left: 360px;
+	margin-top: 200px;
+	color: white;
+}
+
 
 body{
 	background-color: #38424D;

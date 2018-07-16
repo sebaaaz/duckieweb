@@ -1,7 +1,6 @@
 // ROS
 
 $(function() {
-  connected = false;
 
   var ros = new ROSLIB.Ros({
     url : 'ws://localhost:9090'
@@ -9,7 +8,6 @@ $(function() {
 
   ros.on('connection', function() {
     console.log('Connected to websocket server.');
-    connected = true;
     $("#status").attr("src" , "imgs/on.png")
   });
 
@@ -21,11 +19,9 @@ $(function() {
     console.log('Connection to websocket server closed.');
   });
 
-if (connected) {
-
 var speed = new ROSLIB.Topic({
   ros: ros,
-  name: '/duckiebot/wheels_driver_node/car_cmd',
+  name: '/śpeed',
   messageType : 'duckietown_msgs/Twist2DStamped'
 });
 
@@ -33,8 +29,8 @@ speed.subscribe(function(message) {
   v = message.v;
   omega = message.omega;
 
-  $("#velocidad").text(Math.trunc(v*100)/100);
-  $("#omega").text(Math.trunc(omega*-100)/100);
+  $("#NL").text(Math.trunc(v*100)/100 + "  Quacklometers");
+  $("#NA").text(Math.trunc(omega*-100)/100 + "  Quackdianes");
   
   omega /= 8.0;
   
@@ -46,12 +42,23 @@ speed.subscribe(function(message) {
 
   $("#indicadorV").css({"bottom" : v+"%"});
   $("#indicadorH").css({"right" : omega+"%"});
-  $("#barraV").css({"background-color" : "hsl("+hv+", 100%, 50%)"});
-  $("#barraH").css({"background-color" : "hsl("+ho+", 100%, 50%)"});
+  $("#barraV").css({"background-color" : "hsl("+hv+", 100%, 35%)"});
+  $("#barraH").css({"background-color" : "hsl("+ho+", 100%, 35%)"});
 
-  console.log(hv);
 })
 
-}
+
+var camara = new ROSLIB.Topic({
+  ros: ros,
+  name: '/duckiebot/camera_node/image/compressed',
+  messageType : 'sensor_msgs/Image'
+});
+
+camara.subscribe(function(message) {
+  foto = message.data;
+  $("#camara").attr("src", foto);
+  console.log(1);
+
+})
 
 });

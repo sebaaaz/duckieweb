@@ -15,9 +15,8 @@
     <link href="/dist/css/sb-admin-2.css" rel="stylesheet">
 
     <script src="js/jquery-3-3-1.js"></script>
-	<script type="text/javascript" src="http://static.robotwebtools.org/EventEmitter2/current/eventemitter2.min.js"></script>
-	<script type="text/javascript" src="http://static.robotwebtools.org/roslibjs/current/roslib.min.js"></script>
-	<script src="js/main.js" charset="utf-8"></script>
+	<script type="text/javascript" src="/js/ROSLIB/eventemitter2.min.js"></script>
+	<script type="text/javascript" src="/js/ROSLIB/roslib.min.js"></script>
 	<script src="js/ros.js" charset="utf-8"></script>
 
     <!-- Bootstrap Core CSS -->
@@ -34,11 +33,11 @@
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+    <!--
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+    -->
+    
     <link rel="stylesheet" href="css/style.css"/>
 
 
@@ -350,23 +349,23 @@
 
         <!-- START PAGE CONTENT -->
 
-<div>
-	<p id="velocidad">?</p>
-	<p id="omega">?</p>
-</div>
-
-<br><br><br><br><br>
+<br><br><br><br><br><br><br><br>
 
 <section id="full">
-	<div id=barraV class="barra">
+	<div id="barraV" class="barra">
 		<div id="indicadorV"></div>
+        <p id="NL">?</p>
 	</div>
 
-	<div id=barraH class="barra">
+	<div id="barraH" class="barra">
 		<div id= "indicadorH"></div>
+        <p id="NA">?</p>
 	</div>
 </section>
+</div>
 
+<div>
+    <img id="camara" src="http://localhost:8080/stream?topic=/usb_cam/image_raw"></img>
 </div>
 
 
