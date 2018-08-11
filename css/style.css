@@ -1,0 +1,123 @@
+ul{list-style-type: none;}
+
+ul img{
+	margin-right: 5px; 
+	margin-top: -3px;
+	width: 12px;
+}
+
+ul li{
+	color: orange;
+	font-weight: bold;
+	margin: auto;
+	text-align: justify;
+}
+
+li a{color: white;}
+li a:hover{color: gray;}
+
+#lbar{
+	background-color: #383E4C;
+	min-height: 100%;
+}
+
+#logopato{
+	margin-top: 5px;
+	margin-left: -5px;
+	max-width: 65px;
+}
+
+#duckie{
+	color: yellow;
+	font-size: 30px;
+	font-weight: bold;
+	margin: 0;
+}
+
+#web{
+	color: orange;
+	float: right;
+	font-size: 30px;
+	font-weight: bold;
+	margin-top: -18px;
+}
+
+hr{
+	background-color: white;
+	margin-top: -10px;
+}
+
+.barral{
+	color: #F0F000FF;
+	font-weight: bolder;
+}
+
+#invisible{
+	height: 300px;
+}
+
+#contenido{
+	background-color: #1C1D22;
+	color: white;
+	font-size: 32px;
+	font-family: Ubuntu, sans-serif;
+	height: 100%;
+	padding-top: 24px;
+	text-align: center;
+}
+
+.info{
+	background-color: #383E4C;
+	border: 1px solid #1C1D22;
+	font-size: 18px;
+	font-weight: bold;
+	padding-top: 20px;
+}
+
+.info p{
+	margin: -20px 0 0 0;
+}
+
+
+.valorBruto{
+	border: 4px inset black;
+	margin-top: 50px;
+	height: 200px;
+	padding-top: 30px;
+	width: 200px;
+}
+
+#quacklometers, #quackdianes{
+	font-size: 4.5em;
+}
+
+#barraV{
+	width: auto;
+	height: auto;
+}
+
+#barraH{
+	height: 50px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	width: 300px;
+}
+
+#indicadorV{
+	height: 5px;
+}
+
+#indicadorH{
+	width: 5px;
+
+}
+
+#cargandoPatos{
+	color: white;
+}
+
+.formulario{
+	height: 24px;
+	margin-bottom: -10px;
+	margin-top: -6px;
+}
