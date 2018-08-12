@@ -1,4 +1,7 @@
-ul{list-style-type: none;}
+ul{
+	overflow-y: auto;
+	list-style-type: none;
+}
 
 ul img{
 	margin-right: 5px; 
@@ -9,12 +12,8 @@ ul img{
 ul li{
 	color: orange;
 	font-weight: bold;
-	margin: auto;
-	text-align: justify;
+	overflow: hidden;
 }
-
-li a{color: white;}
-li a:hover{color: gray;}
 
 #lbar{
 	background-color: #383E4C;
@@ -120,4 +119,12 @@ hr{
 	height: 24px;
 	margin-bottom: -10px;
 	margin-top: -6px;
+}
+
+.A{
+	width: 75%;
+}
+
+#listaPatos{
+	width: 100%;
 }

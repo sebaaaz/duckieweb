@@ -23,9 +23,12 @@ $(function() {
 function ValidateIPaddress(ipaddress) {  // https://stackoverflow.com/a/27434991
   if (/^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/.test(ipaddress)) {  
     return (true)  
-  }  
+  }
+  else if (ipaddress == "localhost") {
+  	return (true)
+  }
   alert("Por favor, ingresa una IP válida.")  
-  return (false)  
+  	return (false)  
 }
 
 function agregarPato(nombre, ip){
@@ -37,7 +40,7 @@ function cargarVistaPatos(){
 	$("#cargandoPatos").hide(); //ocultar loading
 	$("#listaPatos").text("");
 	for (pato in listaPatos){
-		$("#listaPatos").append('<li id='+pato+'><img src="/img/off.png"/>'+pato+'</li>'); //mostrar lista patos
+		$("#listaPatos").append('<li><div class="form-inline"><img src="/img/off.png"/><div class="A" id='+pato+'>'+pato+'</div><div class="float-right B" id='+pato+'X>X</div></div></li>'); //mostrar lista patos
 
 		$("#"+pato).click(function() {
 			pato = this.id;
@@ -52,7 +55,16 @@ function cargarVistaPatos(){
 			console.log(patoPrevio);
 			console.log(patoActual);
 		});
+
+		$("#"+pato+"X").click(function() {
+			pato = this.id.slice(0, -1);
+			delete listaPatos[pato];
+			cargarVistaPatos();
+		});
 	}
+
+	size = Object.keys(listaPatos).length;
+	$("#contador").text("DUCKIEBOTS (" + size + ")");
 }
 
 function analizarConexiones(){
