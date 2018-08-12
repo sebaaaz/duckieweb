@@ -1,13 +1,13 @@
 # DuckieWeb
 
-Este repositorio pretende guiar el proceso para poner en funcionamiento el monitoreo web de Duckietown.
+## ¿Qué es DuckieWeb?
+DuckieWeb es un proyecto que busca monitorear tanto el estado de Duckietown como de sus Duckiebots representando todos sus datos en una interfaz web que sea simple y agradable visualmente para el usuario.
 
-# Requisitos
+Este repositorio pretende guiar el proceso para poner en funcionamiento el monitoreo web de la ciudad Duckietown.
 
-### [Repositorio de Duckietown](https://github.com/Duckietown-Chile/Software)
+# Requisitos para tu PC
 
 ### [Jekyll](https://jekyllrb.com/docs/installation/)
-
 
 # Cómo empezar
 
@@ -15,7 +15,10 @@ En la terminal de tu Duckiebot deberás instalar ROS Bridge mediante el comando:
 ```bash
 sudo apt-get install ros-kinect-rosbridge-server
 ```
-Esto permitirá a la interfaz escuchar los nodos de tu bot, los cuales están publicados en el puerto 8080 de tu servidor local.
+Esto permitirá a la interfaz escuchar los tópicos de ROS de tu duckiebot, los cuales serán publicados en el puerto 8080 de tu servidor local cuando ejecutes:
+```bash
+roslaunch rosbridge_server rosbridge_websocket.launch
+```
 
 Una vez instalado ROS Bridge y los requisitos, hacer un pull de este repositorio en la carpeta que desees.
 
@@ -31,9 +34,41 @@ jekyll serve --port=4000
 
 Puedes omitir el parámetro port el cuál viene por defecto en el valor 4000.
 
-Una vez corriendo el servidor local, abre http://localhost:4000/ en tu navegador donde verás la interfaz de DuckieWeb.
+Una vez corriendo el servidor local, abre [http://localhost:4000/](http://localhost:4000/) en tu navegador donde verás la interfaz de DuckieWeb.
 
-## Funciones
+# Demo
+
+Dentro de la ruta */resources* se encuentra un archivo llamado **simulador.py** que busca simular un duckiebot local y así poder visualizar su velocidad linear y angular en tiempo real.
+Para ejecutarlo dirígete a dicha carpeta y ejecuta:
+```bash
+python2.7 simulador.py
+```
+Luego puedes deslizar las barras con el programa ejecutado, si logras ver las velocidades y estas se actualizan en tiempo real, estás listo para conectar tu duckiebot.
+IMPORTANTE: Asegúrate que estás visualizando localhost en la página.
+
+IMAGEN1
+
+# Consideraciones
+
+
+# Agradecimientos
+
+Bootstrap 4 | https://getbootstrap.com/
+
+jQuery | https://jquery.com/
+
+ROS Kinect | http://www.ros.org/
+
+Jekyll | https://jekyllrb.com/
+
+A todo el equipo de Duckietown Chile
+http://duckietown.cl
+
+
+
+
+
+
 
 <!-- ### Main commands
 
