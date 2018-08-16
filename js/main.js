@@ -40,7 +40,7 @@ function cargarVistaPatos(){
 	$("#cargandoPatos").hide(); //ocultar loading
 	$("#listaPatos").text("");
 	for (pato in listaPatos){
-		$("#listaPatos").append('<li><div class="form-inline"><img src="/img/off.png"/><div class="A" id='+pato+'>'+pato+'</div><div class="float-right B" id='+pato+'X>X</div></div></li>'); //mostrar lista patos
+		$("#listaPatos").append('<li><div class="form-inline"><img src="/img/off.png"/><div class="cajaNombrePatoLista" id='+pato+'>'+'<div class="F">'+pato+'</div></div><div class="float-right X" id='+pato+'X>X</div></div></li>'); //mostrar lista patos
 
 		$("#"+pato).click(function() {
 			pato = this.id;
@@ -62,10 +62,7 @@ function cargarVistaPatos(){
 			cargarVistaPatos();
 		});
 	}
-
-	size = Object.keys(listaPatos).length;
-	$("#contador").text("DUCKIEBOTS (" + size + ")");
-}
+};
 
 function analizarConexiones(){
 	//for (conexion in listaPatos){
