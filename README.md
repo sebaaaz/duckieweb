@@ -46,7 +46,7 @@ python2.7 simulador.py
 Luego puedes deslizar las barras con el programa ejecutado, si logras ver las velocidades y estas se actualizan en tiempo real, estás listo para conectar tu duckiebot.
 IMPORTANTE: Asegúrate que estás visualizando localhost en la página.
 
-IMAGEN1
+[![Video Demostración](https://img.youtube.com/vi/Gf40fGSc_2g/0.jpg)](https://www.youtube.com/watch?v=Gf40fGSc_2g)
 
 # Consideraciones
 
