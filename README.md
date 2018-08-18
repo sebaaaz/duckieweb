@@ -5,9 +5,10 @@ DuckieWeb es un proyecto que busca monitorear tanto el estado de Duckietown como
 
 Este repositorio pretende guiar el proceso para poner en funcionamiento el monitoreo web de la ciudad Duckietown.
 
-# Requisitos para tu PC
+# Pre-Requisitos
 
 ### [Jekyll](https://jekyllrb.com/docs/installation/)
+Jekyll sirve para montar sitios web estáticos en nuestro propio servidor local. Lo usamos para montar la web que se encuentra en este repositorio.
 
 # Cómo empezar
 
@@ -39,7 +40,8 @@ Una vez corriendo el servidor local, abre [http://localhost:4000/](http://localh
 # Demo
 
 Dentro de la ruta */resources* se encuentra un archivo llamado **simulador.py** que busca simular un duckiebot local y así poder visualizar su velocidad linear y angular en tiempo real.
-Para ejecutarlo dirígete a dicha carpeta y en la terminal escribe:
+Sigue todos los pasos previos asegurándote de usar **rosbridge** en tu computador.
+Posteriormente dirígete a la carpeta mencionada y en la terminal escribe:
 ```bash
 python2.7 simulador.py
 ```
