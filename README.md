@@ -48,7 +48,7 @@ IMPORTANTE: Asegúrate que estás visualizando localhost en la página.
 
 ### Video Demostración
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=Gf40fGSc_2g" target="_blank"></a>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=Gf40fGSc_2g" target="_blank"><img src="http://i3.ytimg.com/vi/Gf40fGSc_2g/maxresdefault.jpg" align="center"></a>
 
 # Consideraciones
 
