@@ -19,7 +19,7 @@ Esto permitirá a la interfaz escuchar los tópicos de ROS de tu duckiebot, los 
 ```bash
 roslaunch rosbridge_server rosbridge_websocket.launch
 ```
-
+Este comando debe usarse en la terminal de tu duckiebot.
 Una vez instalado ROS Bridge y los requisitos, hacer un pull de este repositorio en la carpeta que desees.
 
 ```bash
@@ -39,7 +39,7 @@ Una vez corriendo el servidor local, abre [http://localhost:4000/](http://localh
 # Demo
 
 Dentro de la ruta */resources* se encuentra un archivo llamado **simulador.py** que busca simular un duckiebot local y así poder visualizar su velocidad linear y angular en tiempo real.
-Para ejecutarlo dirígete a dicha carpeta y ejecuta:
+Para ejecutarlo dirígete a dicha carpeta y en la terminal escribe:
 ```bash
 python2.7 simulador.py
 ```
@@ -50,8 +50,15 @@ IMPORTANTE: Asegúrate que estás visualizando localhost en la página.
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=Gf40fGSc_2g" target="_blank"><img src="http://i3.ytimg.com/vi/Gf40fGSc_2g/maxresdefault.jpg" align="center" target="_blank"></a>
 
-# Consideraciones
+# Ideas a Futuro
 
+- Página responsiva
+- Versión móvil
+- Ver cámara en tiempo real
+- Total integración con otros proyectos como:
+	* Semáforos
+	* Localización GPS
+	* Reconocimiento de objetos (Machine Learning)
 
 # Agradecimientos
 
@@ -59,7 +66,7 @@ Bootstrap 4 | https://getbootstrap.com/
 
 jQuery | https://jquery.com/
 
-ROS Kinect | http://www.ros.org/
+ROS Kinetic | http://www.ros.org/
 
 Jekyll | https://jekyllrb.com/
 
