@@ -14,7 +14,7 @@ Este repositorio pretende guiar el proceso para poner en funcionamiento el monit
 
 En la terminal de tu Duckiebot deberás instalar ROS Bridge mediante el comando:
 ```bash
-sudo apt-get install ros-kinect-rosbridge-server
+sudo apt-get install ros-kinetic-rosbridge-server
 ```
 Esto permitirá a la interfaz escuchar los tópicos de ROS de tu duckiebot, los cuales serán publicados en el puerto 8080 de tu servidor local cuando ejecutes:
 ```bash
