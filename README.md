@@ -8,20 +8,20 @@ Este repositorio pretende guiar el proceso para poner en funcionamiento el monit
 # Requisitos para tu PC
 
 ### [Jekyll](https://jekyllrb.com/docs/installation/)
-Jekyll sirve para montar sitios web estáticos en nuestro propio servidor local. Lo usamos para montar la web que se encuentra en este repositorio.
 
 # Cómo empezar
 
 La versión ROS utilizada por los duckiebots es **kinetic** por lo que en la terminal de tu bot deberás instalar esta versión de ROS Bridge mediante el comando:
 ```bash
-sudo apt-get install ros-kinect-rosbridge-server
+sudo apt-get install ros-kinetic-rosbridge-suite
 ```
 Esto permitirá a la interfaz escuchar los tópicos de ROS de tu duckiebot, los cuales serán publicados en el puerto 8080 de tu servidor local cuando ejecutes:
 ```bash
 roslaunch rosbridge_server rosbridge_websocket.launch
+sudo apt-get update
 ```
-Este comando debe usarse en la terminal de tu duckiebot.
-Una vez instalado ROS Bridge y los requisitos, hacer un pull de este repositorio en la carpeta que desees.
+Este comando debe usarse en la terminal de tu duckiebot, procurando que roscore esté iniciado.
+Una vez instalado ROS Bridge y los requisitos, hacer un pull de este repositorio en la carpeta que desees de tu PC.
 
 ```bash
 git clone https://github.com/KratoSeba/duckieweb
@@ -37,8 +37,9 @@ Una vez corriendo el servidor local, abre [http://localhost:4000/](http://localh
 
 # Demo
 
-Dentro de la ruta */resources* se encuentra un archivo llamado **simulador.py** que busca simular un duckiebot local y así poder visualizar su velocidad linear y angular en tiempo real.
-Para ejecutarlo dirígete a dicha carpeta y en la terminal escribe:
+Dentro de la ruta */demo* se encuentra un archivo llamado **simulador.py** que busca simular un duckiebot local y así poder visualizar su velocidad linear y angular en tiempo real.
+La idea es ejecutar **roscore** y **ROS Bridge** en el PC de igual forma como si de un Duckiebot se tratara.
+Luego en la carpeta mencionada escribe:
 ```bash
 python2.7 simulador.py
 ```
