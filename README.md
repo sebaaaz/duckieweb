@@ -5,16 +5,15 @@ DuckieWeb es un proyecto que busca monitorear tanto el estado de Duckietown como
 
 Este repositorio pretende guiar el proceso para poner en funcionamiento el monitoreo web de la ciudad Duckietown.
 
-# Pre-Requisitos
+# Requisitos para tu PC
 
 ### [Jekyll](https://jekyllrb.com/docs/installation/)
-###### Jekyll sirve para montar sitios web estáticos en nuestro propio servidor local. Lo usamos para montar la web que se encuentra en este repositorio.
 
 # Cómo empezar
 
 La versión ROS utilizada por los duckiebots es **kinetic** por lo que en la terminal de tu bot deberás instalar esta versión de ROS Bridge mediante el comando:
 ```bash
-sudo apt-get install ros-kinetic-rosbridge-server
+sudo apt-get install ros-kinect-rosbridge-server
 ```
 Esto permitirá a la interfaz escuchar los tópicos de ROS de tu duckiebot, los cuales serán publicados en el puerto 8080 de tu servidor local cuando ejecutes:
 ```bash
@@ -38,8 +37,7 @@ Una vez corriendo el servidor local, abre [http://localhost:4000/](http://localh
 # Demo
 
 Dentro de la ruta */resources* se encuentra un archivo llamado **simulador.py** que busca simular un duckiebot local y así poder visualizar su velocidad linear y angular en tiempo real.
-Sigue todos los pasos previos asegurándote de usar **rosbridge** en tu computador.
-Posteriormente dirígete a la carpeta mencionada y en la terminal escribe:
+Para ejecutarlo dirígete a dicha carpeta y en la terminal escribe:
 ```bash
 python2.7 simulador.py
 ```
