@@ -8,6 +8,7 @@ Este repositorio pretende guiar el proceso para poner en funcionamiento el monit
 # Requisitos para tu PC
 
 ### [Jekyll](https://jekyllrb.com/docs/installation/)
+Jekyll sirve para montar sitios web estáticos en nuestro propio servidor local. Lo usamos para montar la web que se encuentra en este repositorio.
 
 # Cómo empezar
 
