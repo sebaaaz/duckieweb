@@ -11,7 +11,7 @@ Este repositorio pretende guiar el proceso para poner en funcionamiento el monit
 
 # Cómo empezar
 
-En la terminal de tu Duckiebot deberás instalar ROS Bridge mediante el comando:
+La versión ROS utilizada por los duckiebots es **kinetic** por lo que en la terminal de tu bot deberás instalar esta versión de ROS Bridge mediante el comando:
 ```bash
 sudo apt-get install ros-kinect-rosbridge-server
 ```
@@ -29,10 +29,8 @@ git clone https://github.com/KratoSeba/duckieweb
 Hecho esto dirígete a la carpeta mediante la terminal y ejecuta:
 
 ```bash
-jekyll serve --port=4000
+jekyll serve
 ```
-
-Puedes omitir el parámetro port el cuál viene por defecto en el valor 4000.
 
 Una vez corriendo el servidor local, abre [http://localhost:4000/](http://localhost:4000/) en tu navegador donde verás la interfaz de DuckieWeb.
 
@@ -59,6 +57,7 @@ IMPORTANTE: Asegúrate que estás visualizando localhost en la página.
 	* Semáforos
 	* Localización GPS
 	* Reconocimiento de objetos (Machine Learning)
+	* Visualizar mapa de la ciudad
 
 # Agradecimientos
 

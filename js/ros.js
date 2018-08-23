@@ -63,17 +63,17 @@ function conectarPato(ip) {
   });
 
   ros.on('close', function() {
-    $("#"+patoPrevio[0] + "> img").attr("src", "/img/off.png");
+    $("#"+patoPrevio[0]).prev().attr("src", "/img/off.png");
     console.log("Conexión terminada para " + patoPrevio[0]);
   });
 
   ros.on('connection', function() {
-    $("#"+patoActual[0] + "> img").attr("src", "/img/on.png");
+    $("#"+patoActual[0]).prev().attr("src", "/img/on.png");
     console.log('Connectado a ' + ipPato);
   });
 
   ros.on('error', function(error) {
-    $("#"+patoPrevio[0] + "> img").attr("src", "/img/off.png");
+    $("#"+patoPrevio[0]).prev().attr("src", "/img/off.png");
     console.log('Error connecting to websocket server: ', error);
   });
 
