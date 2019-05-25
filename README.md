@@ -19,7 +19,6 @@ sudo apt-get install ros-kinetic-rosbridge-suite
 Esto permitirá a la interfaz escuchar los tópicos de ROS de tu duckiebot, los cuales serán publicados en el puerto 8080 de tu servidor local cuando ejecutes:
 ```bash
 roslaunch rosbridge_server rosbridge_websocket.launch
-sudo apt-get update
 ```
 Este comando debe usarse en la terminal de tu duckiebot, procurando que roscore esté iniciado.
 Una vez instalado ROS Bridge y los requisitos, hacer un pull de este repositorio en la carpeta que desees de tu PC.
