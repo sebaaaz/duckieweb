@@ -71,8 +71,7 @@ ROS Kinetic | http://www.ros.org/
 
 Jekyll | https://jekyllrb.com/
 
-A todo el equipo de Duckietown Chile
-http://duckietown.cl
+A todo el equipo de Duckietown Chile | http://duckietown.cl
 
 ### Contacto
 Cualquier problema, duda o sugerencia por favor crear un issue correspondiente o contactar a los dueños del proyecto:
