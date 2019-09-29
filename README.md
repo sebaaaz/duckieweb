@@ -74,24 +74,6 @@ Jekyll | https://jekyllrb.com/
 A todo el equipo de Duckietown Chile
 http://duckietown.cl
 
-
-
-
-
-
-
-<!-- ### Main commands
-
-# Screenshots
-|   |   |   |
-|:---:|:---:|:---:|
-|<img src="http://i.imgur.com/LXSlNVK.jpg" width="275">|<img src="http://i.imgur.com/hqbhwps.jpg" width="275">|<img src="http://i.imgur.com/Z7b1PqC.jpg" width="275">|
-|Language|Intro|Help|
-|<img src="http://i.imgur.com/k7Y9uhB.jpg" width="275">|<img src="http://i.imgur.com/817Vuys.jpg" width="275">|<img src="http://i.imgur.com/GfKEyTE.jpg" width="275">|
-|Champions|Champion's info|Champion's info 2|
-|<img src="http://i.imgur.com/ZHOzTZA.jpg" width="275">|<img src="http://i.imgur.com/eYRFMlY.jpg" width="275">|<img src="http://i.imgur.com/jPTRiqJ.jpg" width="275">|
-|Champion's extra|Summoner|Skin|
-|<img src="http://i.imgur.com/zqq3mBO.jpg" width="275">|<img src="http://i.imgur.com/uHuBn2h.jpg" width="275">|<img src="http://i.imgur.com/ymBSpIG.jpg" width="275">|
-|Sales|Match blue team|Match red team|
-
-Screenshots reorganized by [@mathieuzen](https://github.com/mathieuzen/)   -->
+### Contacto
+Cualquier problema, duda o sugerencia por favor crear un issue correspondiente o contactar a los dueños del proyecto:
+<a href ="https://github.com/mvarasg/">mvarasg</a> - <a href ="https://github.com/sebaaaz/">sebaaaz</a>
